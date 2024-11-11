@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "Q Code Game"
 authors = ["JS <javiserranoie@clarity.ai>"]
 readme = "README.md"
+licence = "GPL-3.0-or-later"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.3"
