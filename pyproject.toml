@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "q-code-game"
+version = "0.1.0"
+description = "Q Code Game"
+authors = ["JS <javiserranoie@clarity.ai>"]
+readme = "README.md"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+pytest-cov = "^6.0.0"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.32.3"
+pandas = "^2.2.3"
+lxml = "^5.3.0"
+pydantic = "^2.9.2"
+pydantic-settings = "^2.6.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = "--cov=src --cov-report=xml"
+testpaths = ["tests"]
